@@ -43,6 +43,7 @@ public class BishopBlackTest {
                 () -> {
                     bishopBlack.way(G4);
                 });
-        assertThat(exception.getMessage()).isEqualTo("Could not way by diagonal from %s to %s", C1, G4);
+        assertThat(exception.getMessage())
+                .isEqualTo("Could not way by diagonal from %s to %s", C1, G4);
     }
 }

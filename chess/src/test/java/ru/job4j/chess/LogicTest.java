@@ -52,6 +52,7 @@ public class LogicTest {
                     logic.move(C1, H5);
                 });
         Figure expected = new BishopBlack(Cell.H6);
-        assertThat(exception.getMessage()).isEqualTo("Could not way by diagonal from %s to %s", C1, H5);
+        assertThat(exception.getMessage())
+                .isEqualTo("Could not way by diagonal from %s to %s", C1, H5);
     }
 }
